@@ -1,4 +1,17 @@
 Zombiesearch::Application.routes.draw do
+  get "zombies/index"
+
+  get "zombies/new"
+
+  root :to => 'pages#home'
+  resources :zombies
+  
+  
+
+  get "pages/about"
+
+  get "pages/contact"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
