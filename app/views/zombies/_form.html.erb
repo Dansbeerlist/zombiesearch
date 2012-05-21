@@ -1,0 +1,13 @@
+<h3><b><u>Post a new beer!</u></b></h3>
+<%= simple_form_for Zombie.new do |f| %>
+
+ <%= f.label :name %>
+ </br>
+  <%= f.text_field :name %>
+  <%= f.input :type, :collection => ["Star Wars", "Christmas", "Grandma"]%>
+  <%= f.label :description %>
+  <%= f.text_area :description %>
+  </br>
+  <%= f.button :submit, "Create Zombie"%>
+ 
+<% end %>

@@ -1,0 +1,8 @@
+
+<ul>
+<% @zombies.each do |zombie| %>
+<li><strong><u>Name:</u></strong> <%= zombie.name %></li>
+<li><strong><u>Type:</u></strong> <%= zombie.type %></li>
+<li><strong><u>Description:</u></strong><br /> <%= zombie.description %></li>
+<% end %>
+</ul>
